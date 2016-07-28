@@ -8,6 +8,6 @@ Orignally converted from [rafathefull/harbour](https://github.com/rafathefull/ha
 
 ## Features
 
-Provized language colorization and snippets for the DBASE Harbour Language
+Provides language colorization and snippets for the DBASE Harbour Language
 
 -----------------------------------------------------------------------------------------------------------
