@@ -1,0 +1,38 @@
+{
+	"docase": {
+		"prefix": "docase",
+		"body": "\n\ndo case\n   case ${1:/* condition */}\n\t\t${2:/* code */}\n   otherwise\n\t\t${2:/* code */}\nendcase",
+		"description": "do case",
+		"scope": "source.harbour"
+	},
+	"do": {
+		"prefix": "do",
+		"body": "\ndo while ${1:/* condition */}\n${2:/* code */}\nenddo",
+		"description": "do while",
+		"scope": "source.harbour"
+	},
+	"for": {
+		"prefix": "for",
+		"body": "for ${1:n}:= 1 to ${2:n}\n${3:/* code */}\nnext",
+		"description": "for...next",
+		"scope": "source.harbour"
+	},
+	"ife": {
+		"prefix": "ife",
+		"body": "if (${1:condicion})\n\t${0:// True }\nelse\n\t${2:// False }\nendif",
+		"description": "if..else..endif",
+		"scope": "source.harbour"
+	},
+	"if": {
+		"prefix": "if",
+		"body": "if (${1:condicion})\n\t${0: }\nendif",
+		"description": "if..endif",
+		"scope": "source.harbour"
+	},
+	"inc": {
+		"prefix": "inc",
+		"body": "#include \"${1:${TM_FILENAME/\\..+$/.ch/}}\"",
+		"description": "#include \"...\"",
+		"scope": "source.harbour"
+	}
+}

@@ -1,0 +1,30 @@
+{
+    "name": "harbour",
+    "displayName": "Harbour",
+    "description": "Syntax Highlight for Harbour",
+    "version": "0.0.1",
+    "publisher": "Ekon",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "harbour",
+            "aliases": ["Harbour", "harbour"],
+            "extensions": [".prg",".ch"],
+            "configuration": "./harbour.configuration.json"
+        }],
+        "grammars": [{
+            "language": "harbour",
+            "scopeName": "source.harbour",
+            "path": "./syntaxes/harbour.tmLanguage"
+        }],
+        "snippets": [{
+                "language": "harbour",
+                "path": "./snippets/snippets.json"
+        }]
+    }
+}
