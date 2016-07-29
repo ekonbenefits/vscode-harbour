@@ -3,7 +3,7 @@
     "displayName": "Harbour",
     "description": "Syntax Highlighting for the Harbour DBase Language",
     "version": "0.0.1",
-    "publisher": "Ekon",
+    "publisher": "ekon",
     "engines": {
         "vscode": "^1.0.0"
     },
