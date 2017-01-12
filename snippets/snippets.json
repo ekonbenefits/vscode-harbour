@@ -16,6 +16,12 @@
 		"body": "for ${1:n}:= 1 to ${2:n}\n${3:/* code */}\nnext",
 		"description": "for...next",
 		"scope": "source.harbour"
+	},	
+	"foreach": {
+		"prefix": "foreach",
+		"body": "for each ${1:n} in ${2:n}\n${3:/* code */}\nnext",
+		"description": "for each...next",
+		"scope": "source.harbour"
 	},
 	"ife": {
 		"prefix": "ife",

@@ -39,7 +39,7 @@
 			<key>comment</key>
 			<string>sentencias de control</string>
 			<key>match</key>
-			<string>(?i)(?:\s+|\b)(?:do|case|class|endclass|data|method|init|endcase|otherwise|switch|if|else|elseif|endif|while|end|enddo|exit|static function|function|return|for|next|include|ifdef|stdout|ifndef|try|catch)\b</string>
+			<string>(?i)(?:\s+|\b)(?:do|case|class|endclass|data|method|init|endcase|otherwise|switch|if|else|elseif|endif|while|end|enddo|exit|quit|static function|function|procedure|return|for|for each|to|in|next|include|ifdef|stdout|ifndef|try|catch)\b</string>
 			<key>name</key>
 			<string>keyword.control.harbour</string>
 		</dict>
@@ -123,7 +123,7 @@
 			<key>match</key>
 			<string>(?i)(?:\s+|\b)(?:#include|#define|#ifdef|#ifndef)</string>
 			<key>name</key>
-			<string>constant.numeric.harbour</string>
+			<string>meta.preprocessor.harbour</string>
 		</dict>
 		<dict>
 			<key>comment</key>

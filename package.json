@@ -2,7 +2,7 @@
     "name": "harbour",
     "displayName": "Harbour",
     "description": "Syntax Highlighting for the Harbour DBase Language",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "ekon",
     "engines": {
         "vscode": "^1.0.0"
@@ -14,7 +14,7 @@
         "languages": [{
             "id": "harbour",
             "aliases": ["Harbour", "harbour"],
-            "extensions": [".prg",".ch"],
+            "extensions": [".prg",".ch", ".hb"],
             "configuration": "./harbour.configuration.json"
         }],
         "grammars": [{
