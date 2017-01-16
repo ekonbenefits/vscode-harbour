@@ -39,7 +39,7 @@
 			<key>comment</key>
 			<string>sentencias de control</string>
 			<key>match</key>
-			<string>(?i)(?:\s+|\b)(?:do|case|class|endclass|data|method|init|endcase|otherwise|switch|if|else|elseif|endif|while|end|enddo|exit|quit|static function|function|procedure|return|for|for each|to|in|next|include|ifdef|stdout|ifndef|try|catch)\b</string>
+			<string>(?i)(?:\s+|\b)(?:do|case|class|endclass|data|method|init|endcase|otherwise|switch|if|else|elseif|endif|while|end|enddo|exit|quit|static function|function|procedure|return|for|each|to|in|next|include|ifdef|stdout|ifndef|try|catch)\b</string>
 			<key>name</key>
 			<string>keyword.control.harbour</string>
 		</dict>
@@ -47,7 +47,7 @@
 			<key>comment</key>
 			<string>sentencias de control</string>
 			<key>match</key>
-			<string>(?i)(?:\s+|\b)(?:GO TOP|SELECT|SAY|GET|PICTURE|SEEK|REPLACE|APPEND BLANK|USE|INDEX ON|TAG|SET|ON|OFF|COMMIT|SHARED|NEW|CLOSE)\b</string>
+			<string>(?i)(?:\s+|\b)(?:GO TOP|SELECT|SAY|GET|PICTURE|SEEK|REPLACE|APPEND BLANK|USE|INDEX ON|TAG|SET|ON|OFF|COMMIT|SHARED|NEW|CLOSE|READONLY|CLEAR)\b</string>
 			<key>name</key>
 			<string>keyword.command.xbase.harbour</string>
 		</dict>
@@ -116,6 +116,38 @@
 			<string>(\*\*).*?($\n?|(?=\?&gt;))</string>
 			<key>name</key>
 			<string>comment.line.double-star.harbour</string>
+		</dict>
+			<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.harbour</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>in-line comment with &amp;&amp;</string>
+			<key>match</key>
+			<string>(\&amp;\&amp;).*?($\n?|(?=\?&gt;))</string>
+			<key>name</key>
+			<string>comment.line.double-amp.harbour</string>
+		</dict>
+						<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.harbour</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>in-line comment with single * </string>
+			<key>match</key>
+			<string>^\s*(\*).*?($\n?|(?=\?&gt;))</string>
+			<key>name</key>
+			<string>comment.line.single-star.harbour</string>
 		</dict>
 		<dict>
 			<key>comment</key>
