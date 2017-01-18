@@ -129,7 +129,7 @@
 			<key>comment</key>
 			<string>in-line comment with *</string>
 			<key>match</key>
-			<string>(NOTE).*?($\n?|(?=\?&gt;))</string>
+			<string>(NOTE\s).*?($\n?|(?=\?&gt;))</string>
 			<key>name</key>
 			<string>comment.line.note.harbour</string>
 		</dict>
