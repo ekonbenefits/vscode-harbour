@@ -47,7 +47,7 @@
 			<key>comment</key>
 			<string>sentencias de control</string>
 			<key>match</key>
-			<string>(?i)(?:\s+|\b)(?:GO TOP|SELECT|SAY|GET|PICTURE|SEEK|REPLACE|APPEND BLANK|USE|INDEX ON|TAG|SET|ON|OFF|COMMIT|SHARED|NEW|CLOSE|READONLY|CLEAR)\b</string>
+			<string>(?i)(?:\s+|\b)(?:GO TOP|SELECT|SAY|GET|PICTURE|SEEK|REPLACE|APPEND BLANK|USE|INDEX ON|TAG|SET|ON|OFF|COMMIT|SHARED|NEW|CLOSE|READONLY|CLEAR|RUN|UNLOCK|SKIP|PACK|ZAP)\b</string>
 			<key>name</key>
 			<string>keyword.command.xbase.harbour</string>
 		</dict>
@@ -63,7 +63,7 @@
 			<key>comment</key>
 			<string>declaraciones</string>
 			<key>match</key>
-			<string>(?i)(?:\s+|\b)(?:local|nil|default|field|static|public|static|external|request|private|global)\b</string>
+			<string>(?i)(?:\s+|\b)(?:local|nil|default|field|static|public|static|external|request|private|global|parameters)\b</string>
 			<key>name</key>
 			<string>storage.type.harbour</string>
 		</dict>
@@ -111,11 +111,27 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>in-line comment with **</string>
+			<string>in-line comment with *</string>
 			<key>match</key>
-			<string>(\*\*).*?($\n?|(?=\?&gt;))</string>
+			<string>(\*).*?($\n?|(?=\?&gt;))</string>
 			<key>name</key>
-			<string>comment.line.double-star.harbour</string>
+			<string>comment.line.star.harbour</string>
+		</dict>
+						<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.comment.harbour</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>in-line comment with *</string>
+			<key>match</key>
+			<string>(NOTE).*?($\n?|(?=\?&gt;))</string>
+			<key>name</key>
+			<string>comment.line.note.harbour</string>
 		</dict>
 			<dict>
 			<key>captures</key>
@@ -132,22 +148,6 @@
 			<string>(\&amp;\&amp;).*?($\n?|(?=\?&gt;))</string>
 			<key>name</key>
 			<string>comment.line.double-amp.harbour</string>
-		</dict>
-						<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.comment.harbour</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>in-line comment with single * </string>
-			<key>match</key>
-			<string>^\s*(\*).*?($\n?|(?=\?&gt;))</string>
-			<key>name</key>
-			<string>comment.line.single-star.harbour</string>
 		</dict>
 		<dict>
 			<key>comment</key>
