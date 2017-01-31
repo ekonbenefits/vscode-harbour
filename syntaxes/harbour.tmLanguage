@@ -113,7 +113,7 @@
 			<key>comment</key>
 			<string>in-line comment with *</string>
 			<key>match</key>
-			<string>(\*).*?($\n?|(?=\?&gt;))</string>
+			<string>^\s*(\*).*?($\n?|(?=\?&gt;))</string>
 			<key>name</key>
 			<string>comment.line.star.harbour</string>
 		</dict>
@@ -127,7 +127,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>in-line comment with *</string>
+			<string>in-line comment with NOTE</string>
 			<key>match</key>
 			<string>(NOTE\s).*?($\n?|(?=\?&gt;))</string>
 			<key>name</key>
@@ -175,7 +175,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(:=|->|\+=|-=)</string>
+			<string>(:=|->|\+=|-=|]\*=|\*\*=|^=|/=|\%=)</string>
 			<key>name</key>
 			<string>keyword.operator.assignment.harbour</string>
 		</dict>
