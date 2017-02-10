@@ -39,7 +39,7 @@
 			<key>comment</key>
 			<string>sentencias de control</string>
 			<key>match</key>
-			<string>(?i)(?:\s+|\b)(?:do|case|class|endclass|data|method|init|endcase|otherwise|switch|if|else|elseif|endif|while|end|enddo|exit|quit|static function|function|procedure|return|for|each|to|in|next|include|ifdef|stdout|ifndef|try|catch)\b</string>
+			<string>(?i)(?:\s+|\b)(?:do|case|class|endclass|data|method|init|endcase|otherwise|switch|if|else|elseif|endif|while|end|enddo|exit|quit|static function|function|procedure|return|for|each|to|in|next|include|ifdef|stdout|ifndef|try|catch|begin sequence|break|recover|using)\b</string>
 			<key>name</key>
 			<string>keyword.control.harbour</string>
 		</dict>
